@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Diet Chart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Diet Chart</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('breakfast')">Breakfast Options</a></li>
+                <li><a href="#" onclick="showSection('lunch')">Lunch Options</a></li>
+                <li><a href="#" onclick="showSection('dinner')">Dinner Options</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Importance of Meals</h2>
+        <div class="meal-info">
+            <h3>Breakfast</h3>
+            <img src="images/breakfast.jpg" alt="Breakfast">
+            <p>Breakfast is the most important meal of the day. It gives you energy to start your day and improves concentration.</p>
+        </div>
+        <div class="meal-info">
+            <h3>Lunch</h3>
+            <img src="images/lunch.jpg" alt="Lunch">
+            <p>Lunch keeps your metabolism active and helps maintain energy levels through the afternoon.</p>
+        </div>
+        <div class="meal-info">
+            <h3>Dinner</h3>
+            <img src="images/dinner.jpg" alt="Dinner">
+            <p>Dinner should be light and balanced. It helps your body repair and prepare for the next day.</p>
+        </div>
+    </section>
+
+    <section id="breakfast" class="hidden">
+        <h2>Breakfast Options</h2>
+        <div class="meal-item">
+            <img src="images/eggs.jpg" alt="Eggs">
+            <p>Scrambled Eggs</p>
+        </div>
+        <div class="meal-item">
+            <img src="images/sprouts salad.jpg" alt="sprouts salad">
+            <p>sprouts salad</p>
+        </div>
+        <div class="meal-item">
+            <img src="images/smoothie.jpg" alt="Smoothie">
+            <p>Fruit Smoothie</p>
+        </div>
+    </section>
+
+    <section id="lunch" class="hidden">
+        <h2>Lunch Options</h2>
+        <div class="meal-item">
+            <img src="images/leafyvegetables.jpg" alt="leafy vegetables">
+            <p>leafy vegetables</p>
+        </div>
+        <div class="meal-item">
+            <img src="images/chicken.jpg"  alt="chicken">
+            <p>chicken</p>
+        </div>
+        <div class="meal-item">
+            <img src="images/salad.jpg" alt="salad">
+            <p>Veggies salad</p>
+        </div>
+    </section>
+
+    <section id="dinner" class="hidden">
+        <h2>Dinner Options</h2>
+        <div class="meal-item">
+            <img src="images/daltadhka.jpg" alt="dal tadhka">
+            <p>Dal Tadka</p>
+        </div>
+        <div class="meal-item">
+            <img src="images/palak panner.jpg" alt="palak panner">
+            <p>palak panner</p>
+        </div>
+        <div class="meal-item">
+            <img src="images/vegbiryani.jpg" alt="Vegetable biryani">
+            <p>Vegetable biryani</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
